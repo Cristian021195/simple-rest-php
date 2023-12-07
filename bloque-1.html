@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main class="container mt-5">
+        <section>
+            <div class="d-flex justify-content-between align-items-center align-content-center">
+                <h1>Encuesta de Ocupación Hotelera 2023</h1>
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                      <li class="page-item"><a class="page-link" href="#">◄</a></li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#">►</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <article class="vh-70 vh-scroll px-3 py-2"><!-- d-flex py-2 justify-content-center flex-wrap gap-2 row -->
+                
+                <form action="">
+                    
+                    <div class="border border-3 rounded my-2 p-2">
+                        <h3>Bloque 1</h3>
+                        <i>Indique la disponibilidad diaria máxima y la ocupación de habitaciones, unidades y plazas de su establecimiento en el mes
+                            de referencia, incluyendo las plazas supletorias.
+                            Si el establecimiento sufrió alguna variación en cuanto al número de habitaciones y plazas disponibles respecto al mes
+                            anterior, por favor aclare los motivos de dicho cambio en la sección “Observaciones”</i>
+                        <div class="mt-2 row">
+                            <b>Habitaciones</b>
+                            <div class="form-floating mb-3 col-12 col-md-3 col-lg-3">
+                              <input type="email" class="form-control form-control-sm" id="diaria" placeholder="">
+                              <label for="diaria">Máximo Diaria</label>
+                            </div>
+                            <div class="form-floating mb-3 col-12 col-md-3 col-lg-3">
+                                <input type="number" class="form-control form-control-sm" id="mensual" placeholder="">
+                                <label for="mensual">Total Mensual</label>
+                            </div>
+                            <div class="form-floating mb-3 col-12 col-md-3 col-lg-3">
+                                <input type="number" class="form-control form-control-sm" id="findes" placeholder="">
+                                <label for="findes">Viernes y sabados (Findes)</label>
+                            </div>
+                        </div>
+                        <div class=" row">
+                            <b>Unidades</b>
+                            <div class="form-floating mb-3 col-12 col-md-3 col-lg-3">
+                              <input type="email" class="form-control form-control-sm" id="diaria" placeholder="">
+                              <label for="diaria">Máximo Diaria</label>
+                            </div>
+                            <div class="form-floating mb-3 col-12 col-md-3 col-lg-3">
+                                <input type="number" class="form-control form-control-sm" id="mensual" placeholder="">
+                                <label for="mensual">Total Mensual</label>
+                            </div>
+                            <div class="form-floating mb-3 col-12 col-md-3 col-lg-3">
+                                <input type="number" class="form-control form-control-sm" id="findes" placeholder="">
+                                <label for="findes">Viernes y sabados (Findes)</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <b>Plazas</b>
+                            <div class="form-floating mb-3 col-12 col-md-3 col-lg-3">
+                              <input type="email" class="form-control form-control-sm" id="diaria" placeholder="">
+                              <label for="diaria">Máximo Diaria</label>
+                            </div>
+                            <div class="form-floating mb-3 col-12 col-md-3 col-lg-3">
+                                <input type="number" class="form-control form-control-sm" id="mensual" placeholder="">
+                                <label for="mensual">Total Mensual</label>
+                            </div>
+                            <div class="form-floating mb-3 col-12 col-md-3 col-lg-3">
+                                <input type="number" class="form-control form-control-sm" id="findes" placeholder="">
+                                <label for="findes">Viernes y sabados (Findes)</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border border-3 rounded my-2 p-2">
+                        <h3>Bloque 1.a</h3>
+                        <i>Indique la ocupación de habitaciones, unidades y plazas de su establecimiento para cada sábado del mes de referencia</i>
+                        <div class="mt-2 row">
+                            <b>Habitaciones</b>
+                            <div class="form-floating mb-3 col-12 col-md-2 col-lg-2">
+                              <input type="email" class="form-control form-control-sm" id="hsabado1" placeholder="">
+                              <label for="hsabado1">1° Sábado</label>
+                            </div>
+                            <div class="form-floating mb-3 col-12 col-md-2 col-lg-2">
+                                <input type="number" class="form-control form-control-sm" id="hsabado2" placeholder="">
+                                <label for="hsabado2">2° Sábado</label>
+                            </div>
+                            <div class="form-floating mb-3 col-12 col-md-2 col-lg-2">
+                                <input type="number" class="form-control form-control-sm" id="hsabado3" placeholder="">
+                                <label for="hsabado3">3° Sábado</label>
+                            </div>
+                            <div class="form-floating mb-3 col-12 col-md-2 col-lg-2">
+                                <input type="number" class="form-control form-control-sm" id="hsabado4" placeholder="">
+                                <label for="hsabado4">4° Sábado</label>
+                            </div>
+                            <div class="form-floating mb-3 col-12 col-md-2 col-lg-2">
+                                <input type="number" class="form-control form-control-sm" id="hsabado5" placeholder="">
+                                <label for="hsabado5">5° Sábado</label>
+                            </div>
+                        </div>
+                        <div class=" row">
+                            <b>Unidades</b>
+                            <div class="form-floating mb-3 col-12 col-md-2 col-lg-2">
+                                <input type="email" class="form-control form-control-sm" id="usabado1" placeholder="">
+                                <label for="usabado1">1° Sábado</label>
+                            </div>
+                            <div class="form-floating mb-3 col-12 col-md-2 col-lg-2">
+                                <input type="number" class="form-control form-control-sm" id="usabado2" placeholder="">
+                                <label for="usabado2">2° Sábado</label>
+                            </div>
+                            <div class="form-floating mb-3 col-12 col-md-2 col-lg-2">
+                                <input type="number" class="form-control form-control-sm" id="usabado3" placeholder="">
+                                <label for="usabado3">3° Sábado</label>
+                            </div>
+                            <div class="form-floating mb-3 col-12 col-md-2 col-lg-2">
+                                <input type="number" class="form-control form-control-sm" id="usabado4" placeholder="">
+                                <label for="usabado4">4° Sábado</label>
+                            </div>
+                            <div class="form-floating mb-3 col-12 col-md-2 col-lg-2">
+                                <input type="number" class="form-control form-control-sm" id="usabado5" placeholder="">
+                                <label for="usabado5">5° Sábado</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <b>Plazas</b>
+                            <div class="form-floating mb-3 col-12 col-md-2 col-lg-2">
+                                <input type="email" class="form-control form-control-sm" id="psabado1" placeholder="">
+                                <label for="psabado1">1° Sábado</label>
+                            </div>
+                            <div class="form-floating mb-3 col-12 col-md-2 col-lg-2">
+                                <input type="number" class="form-control form-control-sm" id="psabado2" placeholder="">
+                                <label for="psabado2">2° Sábado</label>
+                            </div>
+                            <div class="form-floating mb-3 col-12 col-md-2 col-lg-2">
+                                <input type="number" class="form-control form-control-sm" id="psabado3" placeholder="">
+                                <label for="psabado3">3° Sábado</label>
+                            </div>
+                            <div class="form-floating mb-3 col-12 col-md-2 col-lg-2">
+                                <input type="number" class="form-control form-control-sm" id="psabado4" placeholder="">
+                                <label for="psabado4">4° Sábado</label>
+                            </div>
+                            <div class="form-floating mb-3 col-12 col-md-2 col-lg-2">
+                                <input type="number" class="form-control form-control-sm" id="psabado5" placeholder="">
+                                <label for="psabado5">5° Sábado</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border border-3 rounded my-2 p-2">
+                        <h3>Bloque 1.1</h3>
+                        <i>Indique si el establecimiento estuvo abierto todos los días del mes de referencia</i>
+                        <div class="mt-2 row">
+                        <div class="form-floating mb-3 col-12 col-md-2 col-lg-2">
+                            <input type="number" min="1" max="2" class="form-control form-control-sm" id="b1-1-p1" placeholder="">
+                            <label for="b1-1-p1">¿Estuvo abierto todos los dias?</label>
+                        </div>
+                        <div class="form-floating mb-3 col-12 col-md-2 col-lg-2">
+                            <input type="number" class="form-control form-control-sm" id="b1-1-p2" placeholder="">
+                            <label for="b1-1-p2">¿Cuantos dias?</label>
+                        </div>
+                        </div>
+                        <div class="mt-2 row">
+                            <b>Periodos de apertura</b>
+                            <div class="d-flex flex-nowrap gap-2 my-2 justify-content-around">
+                                <b>Desde</b>
+                                <b>Hasta</b>
+                            </div>
+                            <div class="d-flex flex-nowrap gap-2 my-2">
+                                <input type="date" name="b1-1-p3-1a" id="b1-1-p3-1a" class="form-control form-control-sm">
+                                <input type="date" name="b1-1-p3-1b" id="b1-1-p3-1b" class="form-control form-control-sm">                                
+                            </div>
+                            <div class="d-flex flex-nowrap gap-2 my-2">
+                                <input type="date" name="b1-1-p3-1c" id="b1-1-p3-1c" class="form-control form-control-sm">
+                                <input type="date" name="b1-1-p3-1d" id="b1-1-p3-1d" class="form-control form-control-sm">                                
+                            </div>
+                            <div class="d-flex flex-nowrap gap-2 my-2">
+                                <input type="date" name="b1-1-p3-1e" id="b1-1-p3-1e" class="form-control form-control-sm">
+                                <input type="date" name="b1-1-p3-1f" id="b1-1-p3-1f" class="form-control form-control-sm">                                
+                            </div>
+                            <div class="d-flex flex-nowrap gap-2 my-2">
+                                <input type="date" name="b1-1-p3-1g" id="b1-1-p3-1g" class="form-control form-control-sm">
+                                <input type="date" name="b1-1-p3-1h" id="b1-1-p3-1h" class="form-control form-control-sm">                                
+                            </div>
+                            <div class="d-flex flex-nowrap gap-2 my-2">
+                                <input type="date" name="b1-1-p3-1i" id="b1-1-p3-1i" class="form-control form-control-sm">
+                                <input type="date" name="b1-1-p3-1j" id="b1-1-p3-1j" class="form-control form-control-sm">                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="border border-3 rounded my-2 p-2">
+                        <h3>Bloque 1.2</h3>
+                        <i>Indique si el establecimiento permanecerá abierto todos los días de los dos meses siguientes al mes de referencia (si está
+                            abierto por lo menos un día, deberá responder la encuesta).</i>
+                        <div class="mt-2 row">
+                        <div class="form-floating mb-3 col-12 col-md-2 col-lg-2">
+                            <input type="number" min="1" max="3" class="form-control form-control-sm" id="b1-1-p1" placeholder="">
+                            <label for="b1-1-p1">¿Estuvo abierto todos los dias?</label>
+                        </div>
+                        <div class="form-floating mb-3 col-12 col-md-2 col-lg-2">
+                            <input type="number" class="form-control form-control-sm" id="b1-1-p2" placeholder="">
+                            <label for="b1-1-p2">¿Cuantos dias?</label>
+                        </div>
+                        </div>
+                        <div class="mt-2 row">
+                            <b>Periodos de apertura</b>
+                            <div class="d-flex flex-nowrap gap-2 my-2 justify-content-around">
+                                <b>Desde</b>
+                                <b>Hasta</b>
+                            </div>
+                            <div class="d-flex flex-nowrap gap-2 my-2">
+                                <input type="date" name="b1-1-p3-2a" id="b1-1-p3-2a" class="form-control form-control-sm">
+                                <input type="date" name="b1-1-p3-2b" id="b1-1-p3-2b" class="form-control form-control-sm">                                
+                            </div>
+                            <div class="d-flex flex-nowrap gap-2 my-2">
+                                <input type="date" name="b1-1-p3-2c" id="b1-1-p3-2c" class="form-control form-control-sm">
+                                <input type="date" name="b1-1-p3-2d" id="b1-1-p3-2d" class="form-control form-control-sm">                                
+                            </div>
+                            <div class="d-flex flex-nowrap gap-2 my-2">
+                                <input type="date" name="b1-1-p3-2e" id="b1-1-p3-2e" class="form-control form-control-sm">
+                                <input type="date" name="b1-1-p3-2f" id="b1-1-p3-2f" class="form-control form-control-sm">                                
+                            </div>
+                            <div class="d-flex flex-nowrap gap-2 my-2">
+                                <input type="date" name="b1-1-p3-2g" id="b1-1-p3-2g" class="form-control form-control-sm">
+                                <input type="date" name="b1-1-p3-2h" id="b1-1-p3-2h" class="form-control form-control-sm">                                
+                            </div>
+                            <div class="d-flex flex-nowrap gap-2 my-2">
+                                <input type="date" name="b1-1-p3-2i" id="b1-1-p3-2i" class="form-control form-control-sm">
+                                <input type="date" name="b1-1-p3-2j" id="b1-1-p3-2j" class="form-control form-control-sm">                                
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+            </article>
+            <div class="d-flex justify-content-end">
+                <button class="btn btn-primary m-3">Guardar</button>
+            </div>
+        </section>
+        <!--<section class="mt-4">
+            <article>
+                <h4>Objetivo de la encuesta</h4>
+                <p>El objetivo principal de la Encuesta de Ocupación Hotelera es relevar información de los establecimientos hoteleros y
+                    parahoteleros para elaborar indicadores que permitan medir, desde la óptica de la oferta, la evolución de la actividad y el
+                    empleo del sector, así como la oferta y utilización de la infraestructura; y, desde la demanda, el ingreso de viajeros, su origen
+                    y permanencia. Para ello, se elaboran series de información sobre el grado de ocupación de plazas y habitaciones de los
+                    establecimientos hoteleros y parahoteleros, el ingreso de turistas residentes en el país y no residentes, y medida promedio de
+                    noches que cada uno de estos grupos pernocta</p>
+            </article>
+            <article>
+                <h4>Confidencialidad</h4>
+                <p>Según lo establecido por el artículo 10 de la ley n° 17.622: “Las informaciones que se suministran a los organismos que integran
+                    el Sistema Estadístico Nacional, en cumplimiento de la presente ley, serán estrictamente secretas y solo se utilizarán con fines
+                    estadísticos. Los datos deberán ser suministrados y publicados exclusivamente en compilaciones de conjunto, de modo que
+                    no pueda ser violado el secreto comercial ni patrimonial, ni individualizarse las personas o entidades a quienes se refieren”</p>
+            </article>
+            <article>
+                <h4>Obligatoriedad de responder</h4>
+                <p>Según se consigna en el artículo 11 de la ley antes mencionada: “Todos los organismos y reparticiones nacionales, provinciales
+                    y municipales, las personas de existencia visible o ideal, públicas o privadas con asiento en el país, están obligadas a
+                    suministrar a los organismos que integran el Sistema Estadístico Nacional los datos e informaciones de interés estadístico
+                    que estos le soliciten”. Por lo tanto, agrega el artículo 15 que: “Incurrirán en infracción y serán pasibles de multa quienes no
+                    suministren en término, falseen, o produzcan alguna omisión voluntaria al respecto”</p>
+            </article>
+        </section>-->
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

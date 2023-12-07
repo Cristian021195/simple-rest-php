@@ -1,0 +1,9 @@
+DirectorySlash Off
+
+RewriteEngine On
+ErrorDocument 404 /app/api/404/
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteCond %{REQUEST_URI} !/$
+RewriteCond %{REQUEST_FILENAME}/index.php -f
+RewriteRule (.*) $1/index.php [L]
+

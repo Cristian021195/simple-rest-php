@@ -1,0 +1,9 @@
+/env.php
+*/env.php
+/.vscode
+*/.vscode
+*env.php
+env.php
+/api/test
+/api/test/*
+/api/test*

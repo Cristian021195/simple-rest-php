@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main class="container mt-5">
+        <section>
+            <div class="d-flex justify-content-between align-items-center align-content-center">
+                <h1>Encuesta de Ocupación Hotelera 2023</h1>
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                      <li class="page-item"><a class="page-link" href="#">◄</a></li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#">►</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <article class="vh-70 vh-scroll px-3 py-2"><!-- d-flex py-2 justify-content-center flex-wrap gap-2 row -->
+                <form action="" class="mt-4 row">
+                    <p>Codificación de Establecimiento</p>                    
+                    <div class="row col-12 col-md-6 col-lg-6">
+                        <div class="form-floating mb-3 col-12 col-md-4 col-lg-4">
+                            <input type="number" class="form-control form-control-sm" id="provincia">
+                            <label for="provincia" class="ps-4">Provincia</label>
+                        </div>
+                        <div class="form-floating col-12 col-md-4 col-lg-4">
+                            <input type="text" class="form-control form-control-sm" id="localidad">
+                            <label for="localidad" class="ps-4">Localidad</label>
+                        </div>
+                        <div class="form-floating col-12 col-md-4 col-lg-4">
+                            <input type="number" class="form-control form-control-sm" id="area">
+                            <label for="area" class="ps-4">Area</label>
+                        </div>
+                    </div>
+                    <div class="row col-12 col-md-6 col-lg-6">
+                        <div class="form-floating col-12 col-md-4 col-lg-4">
+                            <input type="text" class="form-control form-control-sm" id="establecimiento">
+                            <label for="establecimiento" class="ps-4">Establecimiento</label>
+                        </div>
+                        <div class="form-floating col-12 col-md-4 col-lg-4">
+                            <input type="number" class="form-control form-control-sm" id="mes">
+                            <label for="mes" class="ps-4">Mes</label>
+                        </div>
+                        <div class="form-floating col-12 col-md-4 col-lg-4">
+                            <input type="number" class="form-control form-control-sm" id="anio">
+                            <label for="anio" class="ps-4">Año</label>
+                        </div>
+                    </div>
+                </form>
+                <form class="row g-3">
+                    <div class="col-md-6">
+                        <label for="" class="form-label"><b>Datos del establecimiento correspondiente al mes: </b></label>
+                        <input type="text" class="form-control form-control-sm" id="">
+                    </div>
+                    <div class="col-md-8"></div>
+                    <div class="col-md-6">
+                        <label for="" class="form-label">Empresa o Razón Social</label>
+                        <input type="text" class="form-control form-control-sm" id="">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="" class="form-label">Nombre de Fantasia</label>
+                        <input type="text" class="form-control form-control-sm" id="">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="" class="form-label">Dirección de establecimiento</label>
+                        <input type="text" class="form-control form-control-sm" id="">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="" class="form-label">Codigo Postal</label>
+                        <input type="text" class="form-control form-control-sm" id="">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="" class="form-label">Latitud</label>
+                        <input type="text" class="form-control form-control-sm" id="">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="" class="form-label">Longitud</label>
+                        <input type="text" class="form-control form-control-sm" id="">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="" class="form-label">Localidad</label>
+                        <input type="text" class="form-control form-control-sm" id="">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="" class="form-label">Provincia</label>
+                        <input type="text" class="form-control form-control-sm" id="">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="" class="form-label">Telefono</label>
+                        <input type="text" class="form-control form-control-sm" id="">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="" class="form-label">Email</label>
+                        <input type="text" class="form-control form-control-sm" id="">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="" class="form-label">CUIT</label>
+                        <input type="text" class="form-control form-control-sm" id="">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="" class="form-label">Pagina Web / Link</label>
+                        <input type="text" class="form-control form-control-sm" id="">
+                    </div>
+                </form>
+            </article>
+            <div class="d-flex justify-content-end">
+                <button class="btn btn-primary m-3">Guardar</button>
+            </div>
+        </section>
+        <!--<section class="mt-4">
+            <article>
+                <h4>Objetivo de la encuesta</h4>
+                <p>El objetivo principal de la Encuesta de Ocupación Hotelera es relevar información de los establecimientos hoteleros y
+                    parahoteleros para elaborar indicadores que permitan medir, desde la óptica de la oferta, la evolución de la actividad y el
+                    empleo del sector, así como la oferta y utilización de la infraestructura; y, desde la demanda, el ingreso de viajeros, su origen
+                    y permanencia. Para ello, se elaboran series de información sobre el grado de ocupación de plazas y habitaciones de los
+                    establecimientos hoteleros y parahoteleros, el ingreso de turistas residentes en el país y no residentes, y medida promedio de
+                    noches que cada uno de estos grupos pernocta</p>
+            </article>
+            <article>
+                <h4>Confidencialidad</h4>
+                <p>Según lo establecido por el artículo 10 de la ley n° 17.622: “Las informaciones que se suministran a los organismos que integran
+                    el Sistema Estadístico Nacional, en cumplimiento de la presente ley, serán estrictamente secretas y solo se utilizarán con fines
+                    estadísticos. Los datos deberán ser suministrados y publicados exclusivamente en compilaciones de conjunto, de modo que
+                    no pueda ser violado el secreto comercial ni patrimonial, ni individualizarse las personas o entidades a quienes se refieren”</p>
+            </article>
+            <article>
+                <h4>Obligatoriedad de responder</h4>
+                <p>Según se consigna en el artículo 11 de la ley antes mencionada: “Todos los organismos y reparticiones nacionales, provinciales
+                    y municipales, las personas de existencia visible o ideal, públicas o privadas con asiento en el país, están obligadas a
+                    suministrar a los organismos que integran el Sistema Estadístico Nacional los datos e informaciones de interés estadístico
+                    que estos le soliciten”. Por lo tanto, agrega el artículo 15 que: “Incurrirán en infracción y serán pasibles de multa quienes no
+                    suministren en término, falseen, o produzcan alguna omisión voluntaria al respecto”</p>
+            </article>
+        </section>-->
+    </main>
+    <footer class="w-100 bg-dark text-white row">
+            <div class="col-12 col-md-6 col-lg-6">
+                <ul>
+                    <li>Por cualquier consulta, por favor diríjase a: </li>
+                    <li>Azopardo 451, piso 1°, sector Turismo, C1107ADE</li>
+                    <li>Tel.: (54-11) 3985-4731/4732. </li>
+                    <li>Correo electrónico: eoh@indec.gob.ar</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6">
+                <div class="">
+                    <div>Instituto Nacional de Estadística y Censos
+                    </div>
+                    <div>
+                        <h4>Indec</h4>
+                    </div>
+                </div>
+                <div>Av. Presidente Julio A. Roca 609 C1067ABB - Ciudad Autónoma de Buenos Aires - República Argentina</div>
+            </div>
+    </footer>
+</body>
+</html>
