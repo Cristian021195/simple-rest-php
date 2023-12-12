@@ -16,7 +16,7 @@ if($_SERVER['REQUEST_METHOD'] == 'GET'){
         "UPDATE usuarios SET capital = capital - 1000 WHERE id_usuario = 5;",
         "UPDATE usuarios SET capital = capital + 1000 WHERE id_usuario = 19;"
     ];
-    echo json_encode($usuario->createTransaction());
+    echo json_encode($usuario->runTransaction());
 }else if($_SERVER['REQUEST_METHOD'] == 'PUT'){
 
 }else if($_SERVER['REQUEST_METHOD'] == 'DELETE'){

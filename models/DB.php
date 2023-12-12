@@ -91,7 +91,7 @@ class DB
         }
     }
 
-    function createTransaction(){
+    function runTransaction(){
         $exit = false;
         $exec_res = null;
         $response = [];

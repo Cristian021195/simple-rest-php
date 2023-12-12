@@ -10,6 +10,7 @@ class QueryBuilder{
     public $limit_conditions;
     public $order_by_conditions;
     public $raw_sub_queries;
+    public $obj_list_properties = [];
     public static function QInsert(){
 
     }
@@ -34,8 +35,27 @@ class QueryBuilder{
     public static function QRollbackTransaction(){
         
     }
+    public static function QArrayPropertiesSO($obj){
+        $arr = [];
+        foreach ((array)$obj as $k => $v){
+            if($k != "props"){
+                array_push($arr, [$k=>$v]);
+            }            
+        }
+        self::$obj_list_properties = $arr;
+    }
 
-
+    public static function QArrayPropertiesMO($objs){
+        $arr = [];
+        foreach ($objs as $key => $obj) {
+            foreach ((array)$obj as $k => $v){
+                if($k != "props"){
+                    array_push($arr, [$k=>$v]);
+                }
+            }    
+        }        
+        self::$obj_list_properties = $arr;
+    }
 
 
     // metodos privados solo para dentro de esta clase
